@@ -4,7 +4,7 @@ class Userprofile_PO {
         cy.get('.hidden-xs').click({force:true});
         cy.wait(2000);
 		cy.get('[href="#/user-profile"]').click();
-        cy.wait(4000);
+        cy.wait(7000);
        	cy.get('#mat-input-6').focus().clear().type(fname);
 		cy.wait(2000);
 		cy.get('#mat-input-7').focus().clear().type(lname);
@@ -18,7 +18,7 @@ class Userprofile_PO {
 		cy.get('.mat-option-text').contains('zoho', {matchCase:true}).click();
 		cy.wait(2000);
 		cy.get('.mat-primary > .mat-button-wrapper').click({force:true});		
-		cy.wait(3000);
+		cy.wait(5000);
 		cy.log('Profile successfully updated');    
 
         }        
