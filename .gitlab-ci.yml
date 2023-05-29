@@ -1,0 +1,16 @@
+stages:
+  - test
+
+test: 
+  image: cypress/browsers:node18.13.0-chrome113
+  stage: test
+  script:
+    - npm ci
+    - npm start &
+    - npm run runOnChrome
+
+  artifacts:
+    when: always
+    paths:
+      - D:\SW_Umesh.Pandey\UmeshPandey\Cypress\CypressDemoProject\cypress\videos
+      - D:\SW_Umesh.Pandey\UmeshPandey\Cypress\CypressDemoProject\cypress\screenshots
