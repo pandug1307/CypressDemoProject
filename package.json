@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "runOnChrome": "npx cypress run --browser chrome"
+    "test": "cypress open",
+    "runOnChrome": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "umeshpandey",
