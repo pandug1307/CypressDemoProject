@@ -7,9 +7,3 @@ test:
     script:
     - npm ci
     - npm run runOnChrome
-
-    artifacts:
-      when: always
-      paths:
-        - cypress/videos/**/.mp4
-        - cypress/screenshots/**/.png

@@ -1,6 +1,4 @@
 /// <reference types="Cypress" />
-/// <reference types="Cypress-xpath" />
-
 
 describe('Cypress web security', () => {
     it('Validate vising two different domain', () => {
